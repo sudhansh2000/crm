@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            margin: 1em 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .section {
+            background-color: #f1f1f1;
+            padding: 1em;
+            margin: 1em 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                margin: 0 0.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CRM System</h1>
+        <nav>
+            <a href="#contact-management">Contact Management</a>
+            <a href="#sales-management">Sales Management</a>
+            <a href="#task-management">Task Management</a>
+            <a href="#customer-support">Customer Support</a>
+        </nav>
+    </header>
+    <main>
+        <div class="section" id="contact-management">
+            <h2>Contact Management</h2>
+            <p>Manage your customer contacts efficiently.</p>
+        </div>
+        <div class="section" id="sales-management">
+            <h2>Sales Management</h2>
+            <p>Track and manage your sales pipeline.</p>
+        </div>
+        <div class="section" id="task-management">
+            <h2>Task Management</h2>
+            <p>Organize and track your tasks.</p>
+        </div>
+        <div class="section" id="customer-support">
+            <h2>Customer Support</h2>
+            <p>Provide excellent customer support.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 CRM System</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded and parsed');
+        });
+    </script>
+</body>
+</html>
